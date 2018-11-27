@@ -10,9 +10,9 @@
             <transactionManager type="JDBC"></transactionManager>
             <dataSource type="POOLED">
                 <property name="driver" value="com.mysql.jdbc.Driver"/>
-                <property name="url" value="jdbc:mysql://172.19.3.2:3306/zcbtest"/>
-                <property name="username" value="zcbtest"/>
-                <property name="password" value="zcbtest"/>
+                <property name="url" value="jdbc:mysql://xxx.xx.x.x:xxxx/xxxx"/>
+                <property name="username" value="xxxxx"/>
+                <property name="password" value="xxxxx"/>
             </dataSource>
         </environment>
     </environments>
