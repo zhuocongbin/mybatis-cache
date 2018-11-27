@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.zcb.mybatic.cache.mapperInter.UserMapping">
+    <cache eviction="LRU" flushInterval="60000" size="512" readOnly="true"></cache>
+    <select id="getById" resultType="com.zcb.mybatic.cache.entity.User" parameterType="java.lang.Integer">
+        SELECT
+        user_id AS  id,
+        user_name AS name,
+        user_password AS password,
+        create_time AS datetime
+        FROM user
+        WHERE user_id = #{id}
+    </select>
+</mapper>
